@@ -10,7 +10,7 @@
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 
-  {{ range .Paginator.Pages }}
+  {{ range where .Paginator.Pages "Section" "posts" }}
   <div>
     <div>
       <a href="{{ .RelPermalink }}">
