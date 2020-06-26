@@ -3,6 +3,7 @@
     {{ .Site.Title }}
   </a>
 
+  {{ partial "header_links.html" }}
   {{ $currentPage := . }}
   {{ with .Site.Menus.main }}
   <div class="UnderlineNav-body">
